@@ -25,10 +25,14 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
 
+from dotenv import load_dotenv
+import os
+
+
+
 #from google.colab import userdata
 #from google.colab.userdata import SecretNotFoundError
 
-import os
 import opendatasets as od
 """
 Download Kaggle dataset securely in Colab environment.
@@ -42,10 +46,11 @@ This code:
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
+load_dotenv()
 
 def download_dataset():
-    os.environ['KAGGLE_USERNAME']= "basemmorad"
-    os.environ['KAGGLE_KEY']= "7b2fbf771941745848a7e98bf707751d"
+    os.environ["KAGGLE_USERNAME"] = os.getenv("KAGGLE_USERNAME")
+    os.environ["KAGGLE_KEY"] = os.getenv("KAGGLE_KEY")
 
 
     od.download("https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset")

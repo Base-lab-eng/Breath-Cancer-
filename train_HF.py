@@ -5,7 +5,7 @@ from data_setup import setup
 from HF_Models import *
 from engine import train_one_epoch, validate
 
-model_type ='vit'  # 'vit' | 'swin' | 'deit'
+model_type ='deit'  # 'vit' | 'swin' | 'deit'
 
 if model_type == 'vit':
     model = build_Vit()
@@ -32,13 +32,13 @@ optimizer = torch.optim.AdamW(
 
 scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
     optimizer,
-    T_max=20,
+    T_max=50,
     eta_min=1e-7
 )
 
 
 
-EPOCHS = 20
+EPOCHS = 50
 best_val_loss = float('inf')
 train_losses, val_losses = [], []
 train_accs,   val_accs   = [], []

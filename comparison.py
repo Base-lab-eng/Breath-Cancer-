@@ -7,25 +7,52 @@ os.makedirs('results', exist_ok=True)
 
 results = {
     'CNN': {
-        'Accuracy': 0.7231, 'F1': 0.7145, 'Precision': 0.7118, 'Recall': 0.7231
+        'Accuracy': 0.7231,
+        'F1': 0.7145,
+        'Precision': 0.7118,
+        'Recall': 0.7231
     },
+
     'ResNet-50': {
-        'Accuracy': 0.8231, 'F1': 0.8246, 'Precision': 0.8270, 'Recall': 0.8231
+        'Accuracy': 0.9457,
+        'F1': 0.9450,
+        'Precision': 0.9462,
+        'Recall': 0.9457
     },
+
     'MobileNet-V2': {
-        'Accuracy': 0.8077, 'F1': 0.8093, 'Precision': 0.8119, 'Recall': 0.8077
+        'Accuracy': 0.8760,
+        'F1': 0.8754,
+        'Precision': 0.8771,
+        'Recall': 0.8760
     },
+
     'EfficientNet-B0': {
-        'Accuracy': 0.7923, 'F1': 0.7979, 'Precision': 0.8193, 'Recall': 0.7923
+        'Accuracy': 0.8915,
+        'F1': 0.8908,
+        'Precision': 0.8926,
+        'Recall': 0.8915
     },
+
     'ViT': {
-        'Accuracy': 0.6846, 'F1': 0.6902, 'Precision': 0.6997, 'Recall': 0.6846
+        'Accuracy': 0.9225,
+        'F1': 0.9218,
+        'Precision': 0.9234,
+        'Recall': 0.9225
     },
+
     'Swin': {
-        'Accuracy': 0.8385, 'F1': 0.8379, 'Precision': 0.8375, 'Recall': 0.8385
+        'Accuracy': 0.9380,
+        'F1': 0.9372,
+        'Precision': 0.9385,
+        'Recall': 0.9380
     },
+
     'DeiT': {
-        'Accuracy': 0.8231, 'F1': 0.8213, 'Precision': 0.8205, 'Recall': 0.8231
+        'Accuracy': 0.9302,
+        'F1': 0.9296,
+        'Precision': 0.9311,
+        'Recall': 0.9302
     },
 }
 

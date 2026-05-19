@@ -5,7 +5,7 @@ from engine import train_one_epoch, validate
 from Transfer_Learning_2 import build_model_2
 from Transfer_Learning_3 import build_model_3
 
-model_type='mobilenet_v2'  # 'resnet50' or 'mobilenet_v2'
+model_type='EfficientNet_B0'  # 'resnet50' or 'mobilenet_v2'
 
 if model_type == 'resnet50':
     model = build_model()
